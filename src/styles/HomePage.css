@@ -1,0 +1,111 @@
+/* Global */
+.home-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:  #ffeadb;
+  color: #333;
+  padding: 20px;
+}
+
+/* Welcome section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Habits section */
+.habits-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Add Habit Section */
+.add-habit {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.add-habit h2 {
+  font-size: 1.8rem;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  padding: 12px 24px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #e65c50;
+}
+
+.about-section {
+  margin-top: 50px;
+  background-color: #fff8f7;
+  border-left: 5px solid #ff6f61;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-section h2 {
+  color: #ff6f61;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.about-section li {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  padding-left: 1.2rem;
+  position: relative;
+  color: #333;
+}
+
+.about-section li::before {
+  content: "✓";
+  color: #ff6f61;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+

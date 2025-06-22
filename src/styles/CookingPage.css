@@ -1,0 +1,164 @@
+.cooking-page {
+  padding: 40px 20px;
+  background: #ff6f61;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #333;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cooking-motivation {
+  background-color: #fff8f7;
+  padding: 1.5rem;
+  border-left: 5px solid #ff6f61;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.cooking-motivation h2 {
+  color: #ff6f61;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cooking-motivation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cooking-motivation li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.cooking-motivation li::before {
+  content: "🍴";
+  position: absolute;
+  left: 0;
+}
+
+
+.search-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: white;
+  color: #ff6f61;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #f1f1f1;
+}
+
+.recipe-container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.recipe-container h2 {
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
+.recipe-container img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.recipe-section {
+  margin-top: 20px;
+}
+
+.recipe-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recipe-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.recipe-section li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.recipe-section p {
+  line-height: 1.6;
+}
+
+.timer-section {
+  background: #fff8f7;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.timer-section h3 {
+  margin-bottom: 10px;
+  color: #ff6f61;
+}
+
+.timer-section input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+  }
+
+  .recipe-container {
+    padding: 20px;
+  }
+}

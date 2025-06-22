@@ -1,0 +1,57 @@
+.meditation-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom, #fff8f6, #ffeae6);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.meditation-header h1 {
+  color: #ff6f61;
+  margin-bottom: 0.5rem;
+}
+
+.meditation-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.session-type, .sound-options, .time-input {
+  flex: 1 1 220px;
+}
+
+.toggle-buttons button,
+.sound-options select,
+.time-input input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background: #fff;
+}
+
+.toggle-buttons .active {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.meditation-timer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.meditation-tips {
+  margin-top: 2rem;
+}
+
+.meditation-tips ul {
+  padding-left: 1.5rem;
+  list-style-type: circle;
+}

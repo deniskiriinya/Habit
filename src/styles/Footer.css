@@ -1,0 +1,97 @@
+.footer {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Footer About Section */
+.footer-about h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-about p {
+  font-size: 1.1rem;
+  max-width: 300px;
+}
+
+/* Links and Social Titles */
+.footer-links h4,
+.footer-social h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Footer Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 0.5rem 0;
+}
+
+.footer-links a {
+  color: #fff9f5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffe0b2;
+  text-decoration: underline;
+}
+
+/* Footer Social Icons Layout */
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 0.5rem;
+}
+
+/* Social Icon Styling */
+.social-icons a {
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Icon Colors */
+.facebook { color: #1877F2; }
+.twitter { color: #1DA1F2; }
+.instagram { color: #E1306C; }
+.linkedin { color: #0077B5; }
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #fffdfd;
+}

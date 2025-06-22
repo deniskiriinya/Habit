@@ -1,0 +1,64 @@
+.add-habit-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.add-habit-page h2 {
+  color: #ff6f61;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.add-habit-page input,
+.add-habit-page textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.add-habit-page input:focus,
+.add-habit-page textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.add-habit-page label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #444;
+}
+
+.add-habit-page button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.9rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.add-habit-page button:hover {
+  background-color: #e85c56;
+}
+
+.timer-preview {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
