@@ -45,7 +45,7 @@ export default function ExercisingPage() {
         <Timer initialTime={customTime} showControls={true} onComplete={() => alert("Well done! Session complete 🎉")} />
       </div>
 
-      {/* Videos Section */}
+      {}
       <h2>🎥 Workout Videos</h2>
       <div className="videos-grid">
         {videos.map((video, index) => (

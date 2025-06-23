@@ -5,7 +5,7 @@ import '../styles/MeditationPage.css';
 export default function MeditationPage() {
   const [sessionType, setSessionType] = useState('guided');
   const [backgroundSound, setBackgroundSound] = useState('rain');
-  const [customTime, setCustomTime] = useState(600); // 10 minutes
+  const [customTime, setCustomTime] = useState(600); 
   const [audio, setAudio] = useState(null);
 
   // Predefined sound URLs

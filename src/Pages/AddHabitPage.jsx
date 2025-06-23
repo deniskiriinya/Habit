@@ -7,7 +7,6 @@ export default function AddHabitPage() {
   const [habit, setHabit] = useState({
     name: '',
     description: '',
-    detailedDescription: '',
     goal: '',
     image: '',
     link: '',

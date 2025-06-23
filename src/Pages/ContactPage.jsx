@@ -18,10 +18,10 @@ export default function ContactsPage() {
     setError('');
 
     emailjs.sendForm(
-      'service_hmr3ork',     // Replace with your EmailJS service ID
-      'template_4zkrm4s',    // Replace with your EmailJS template ID
+      'service_hmr3ork',     
+      'template_4zkrm4s',   
       formRef.current,
-      'h4GW15PXewvDD0abE'      // Replace with your EmailJS public key
+      'h4GW15PXewvDD0abE'      
     )
     .then(() => {
       setSuccess('Message sent successfully!');

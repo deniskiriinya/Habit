@@ -4,12 +4,11 @@ import '../styles/PrayingPage.css';
 
 export default function PrayingPage() {
   const [prayerType, setPrayerType] = useState('personal');
-  const [prayerTime, setPrayerTime] = useState(300); // seconds
+  const [prayerTime, setPrayerTime] = useState(300); 
   const [reminder, setReminder] = useState(true);
-  const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
+  
   const [prayerHistory, setPrayerHistory] = useState([]);
-  const [filterStatus, setFilterStatus] = useState('all');
-  const [filterByDate, setFilterByDate] = useState(false);
+  
 
   const prayerConfig = {
     personal: {
@@ -34,7 +33,6 @@ export default function PrayingPage() {
     },
   };
 
-  // Set default time when prayerType changes
   useEffect(() => {
     setPrayerTime(prayerConfig[prayerType].defaultTime);
   }, [prayerType]);
@@ -42,24 +40,15 @@ export default function PrayingPage() {
   const logPrayer = (completed = true) => {
     const newEntry = {
       type: prayerType,
-      date: selectedDate,
+      
       completed,
     };
     setPrayerHistory(prev => [newEntry, ...prev]);
     if (completed) alert('Prayer logged as completed 🙏');
   };
 
-  // Filtering logic
-  const filteredHistory = prayerHistory.filter(entry => {
-    const matchStatus =
-      filterStatus === 'all' ? true :
-      filterStatus === 'completed' ? entry.completed :
-      !entry.completed;
-
-    const matchDate = !filterByDate || entry.date === selectedDate;
-
-    return matchStatus && matchDate;
-  });
+  
+  
 
   return (
     <div className="praying-page">
@@ -68,23 +57,7 @@ export default function PrayingPage() {
         <p>Enter your time of communion and reflection</p>
       </div>
 
-      <div className="calendar-date">
-        <label>🗓️ Choose Date:</label>
-        <input
-          type="date"
-          value={selectedDate}
-          onChange={(e) => setSelectedDate(e.target.value)}
-        />
-        <label style={{ marginLeft: '1rem' }}>
-          <input
-            type="checkbox"
-            checked={filterByDate}
-            onChange={() => setFilterByDate(!filterByDate)}
-          />
-          Filter logs by date
-        </label>
-      </div>
-
+     
       <div className="prayer-selection">
         <h3>Choose Your Prayer Type</h3>
         <div className="prayer-options">
@@ -139,42 +112,7 @@ export default function PrayingPage() {
         <p>{prayerConfig[prayerType].message}</p>
       </div>
 
-      <div className="history-section">
-        <h3>📝 Prayer History</h3>
-        <div className="filter-buttons">
-          <button
-            className={filterStatus === 'all' ? 'active' : ''}
-            onClick={() => setFilterStatus('all')}
-          >
-            All
-          </button>
-          <button
-            className={filterStatus === 'completed' ? 'active' : ''}
-            onClick={() => setFilterStatus('completed')}
-          >
-            Completed
-          </button>
-          <button
-            className={filterStatus === 'incomplete' ? 'active' : ''}
-            onClick={() => setFilterStatus('incomplete')}
-          >
-            Incomplete
-          </button>
-        </div>
-
-        <ul className="history-list">
-          {filteredHistory.length === 0 ? (
-            <p>No prayer logs match this filter.</p>
-          ) : (
-            filteredHistory.map((entry, index) => (
-              <li key={index}>
-                {entry.date} — {prayerConfig[entry.type].label} —{' '}
-                {entry.completed ? '✅ Completed' : '❌ Incomplete'}
-              </li>
-            ))
-          )}
-        </ul>
-      </div>
+      
     </div>
   );
 }

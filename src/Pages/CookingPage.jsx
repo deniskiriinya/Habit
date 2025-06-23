@@ -6,7 +6,7 @@ export default function CookingPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [recipe, setRecipe] = useState(null);
   const [customTime, setCustomTime] = useState(1800);
-  const API_KEY = 'ed72150fce5f43a0969ae417e07f690a'; // ✅ Replace with your actual API key
+  const API_KEY = 'ed72150fce5f43a0969ae417e07f690a'; 
 
   const fetchRecipe = async () => {
     try {
