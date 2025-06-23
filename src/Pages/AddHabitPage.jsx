@@ -8,7 +8,6 @@ export default function AddHabitPage() {
     name: '',
     description: '',
     goal: '',
-    image: '',
     link: '',
     duration: 600 // default: 10 minutes
   });
