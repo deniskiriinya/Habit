@@ -66,13 +66,7 @@ export default function AddHabitPage() {
         onChange={handleChange}
       />
 
-      <input
-        type="text"
-        name="image"
-        placeholder="Image URL"
-        value={habit.image}
-        onChange={handleChange}
-      />
+     
 
       <input
         type="text"
