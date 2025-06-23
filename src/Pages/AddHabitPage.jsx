@@ -56,12 +56,7 @@ export default function AddHabitPage() {
         onChange={handleChange}
       />
 
-      <textarea
-        name="detailedDescription"
-        placeholder="Detailed Habit Description"
-        value={habit.detailedDescription}
-        onChange={handleChange}
-      />
+    
 
       <input
         type="text"
